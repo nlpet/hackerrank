@@ -22,11 +22,12 @@ second cycle: y -> +1
 third cycle: y -> +1
 fourth cycle: y -> +1
 
-indices = (0, 0)
+x,y = (0, 0)
 
-flag = first
+flag = 1
 
 for i in range(rotations):
+       
     if flag == first
         x ++
     elif flag == second
@@ -35,6 +36,11 @@ for i in range(rotations):
         x --
     else
         y --
+        
+    if x == M - 1 and y == 0: flag 2
+    elif x == M - 1 and y == N - 1: flag 3
+    elif x == 0 and y == N - 1: flag 4
+    else: flag 1
         
  
 """
