@@ -2,15 +2,15 @@
 
 import sys
 
-def braces(values):
+def braces(expression):
     matching_pairs = {
         '(': ')',
         '[': ']',
         '{': '}'
     }
-    
+
     braces_stack = []
-    for ch in values:
+    for ch in expression:
         matching_brace = matching_pairs.get(ch)
         if matching_brace:
             braces_stack.append(ch)
