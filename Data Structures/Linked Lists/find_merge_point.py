@@ -11,18 +11,18 @@
 """
 
 
-def FindMergeNode(headA, headB):
+def find_merge_node(head_a, head_b):
     a, b = {}, {}
     while 1:
-        if headA and headA.data:
-            aid = id(headA.data)
+        if head_a and head_a.data:
+            aid = id(head_a.data)
             if aid in b:
                 return b[aid]
-            a[aid] = headA.data
-            headA = headA.next
-        if headB and headB.data:
-            bid = id(headB.data)
-            b[id(headB.data)] = headB.data
+            a[aid] = head_a.data
+            head_a = head_a.next
+        if head_b and head_b.data:
+            bid = id(head_b.data)
+            b[id(head_b.data)] = head_b.data
             if bid in a:
                 return a[bid]
-            headB = headB.next
+            head_b = head_b.next
