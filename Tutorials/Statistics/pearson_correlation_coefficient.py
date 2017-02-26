@@ -9,8 +9,8 @@ def std(arr, mu, n):
     sum_squared_dist = 0
     for x in arr:
         sum_squared_dist += pow(x - mu, 2)
-
     sigma = sqrt(sum_squared_dist / n)
+
     return sigma
 
 
