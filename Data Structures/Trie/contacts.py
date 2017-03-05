@@ -1,7 +1,9 @@
 from sys import stdin
 
 
-class Trie:
+class Trie(object):
+    """Implementation of a trie."""
+
     def __init__(self):
         self.items = {}
         self._end = '_end_'

@@ -2,4 +2,4 @@
 
 Hackerrank URL: https://www.hackerrank.com/domains/tutorials/10-days-of-statistics
 
-![Success](success.png =100x100)
+<img src="success.png" width="100" height="100" />
