@@ -14,7 +14,6 @@ def largest_decent_number(n):
         if rem % 5 == 0:
             return '5' * div * 3 + '3' * rem
     return '-1'
-        
 
 
 t = int(input().strip())

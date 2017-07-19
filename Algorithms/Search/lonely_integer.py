@@ -5,15 +5,14 @@ def get_input():
   A = [int(n) for n in raw_input().split()]
   c = Counter(A)
   return min(c,key=c.get)
-		
-    
+
+
 def read_file():
-  input = open("input.txt").readlines()
-  N = int(input[0])
-  A = [int(n) for n in input[1].split()]
+  inp = open("input.txt").readlines()
+  N = int(inp[0])
+  A = [int(n) for n in inp[1].split()]
   c = Counter(A)
   return min(c,key=c.get)
-  
 
 
 print read_file()

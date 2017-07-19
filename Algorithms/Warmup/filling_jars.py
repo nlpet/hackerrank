@@ -9,17 +9,17 @@ def get_input():
       jars[j] += k
   return int(math.floor(sum(jars) / len(jars)))
 		
-    
+
 def read_file():
-  input = open("input01.txt").readlines()
-  N,M = [int(n) for n in input[0].split()]
+  inp = open("input01.txt").readlines()
+  N,M = [int(n) for n in inp[0].split()]
   jars = [0] * N
-  
+
   for i in range(M):
-    a,b,k = [int(n) for n in input[1:][i].split()]
+    a,b,k = [int(n) for n in inp[1:][i].split()]
     for j in range(a-1,b):
       jars[j] += k
-      
+
   return int(math.floor(sum(jars) / len(jars)))
 
 print read_file()
