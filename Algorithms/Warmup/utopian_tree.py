@@ -13,7 +13,7 @@ def grow(cycles):
             for i in range(0,cycles-1,2):
                 n = n + n + 1
             return n + n
-          
+
 
 for line in sys.stdin.readlines()[1:]:
     print grow(int(line.strip()))

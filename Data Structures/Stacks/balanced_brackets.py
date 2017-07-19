@@ -1,7 +1,5 @@
 #!/bin/python
 
-import sys
-
 def braces(expression):
     matching_pairs = {
         '(': ')',
